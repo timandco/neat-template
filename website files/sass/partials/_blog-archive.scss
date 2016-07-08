@@ -1,0 +1,102 @@
+/* blog archive page */
+
+.blog-archive {
+	padding: 9em 0 3em 0;
+}
+	
+.main-column {
+
+	.blog-item {
+		@include clearfix;
+		margin-bottom: 1em;
+		@include media($medium-screen-down) {
+			margin-bottom: 2em;
+		}
+
+		.media {
+			@include span-columns(4 of 9);
+			@include media($medium-screen-down) {
+				@include span-columns(12);
+			}
+			transition: all 0.2s;
+
+			&:hover {
+				opacity: 0.9
+			}
+		}
+
+		.blog-teaser {
+			@include span-columns(5 of 9);
+			@include media($medium-screen-down) {
+				@include span-columns(12);
+			}
+
+			.post-title a {
+				color: lighten(black, 40%);
+			}
+
+			.meta {
+				margin-top: .8em;
+			}
+		}
+			
+	}
+}
+
+
+.pagination {
+	$pagination-border-color: $base-border-color;
+	$pagination-background: lighten($pagination-border-color, 10);
+	$pagination-hover-background: lighten($pagination-background, 5);
+	$pagination-color: lighten(black, 40%);
+
+  	text-align: center;
+  	margin-bottom: 2em;
+
+  	ul {
+	    display: inline;
+	    text-align: center;
+
+	    li {
+	      	display: inline;
+	    }
+
+	    ul li {
+	      	display: none;
+	      
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3) {
+				display: inline;
+	      	}
+
+	      	@include media($large-screen) {
+	        	display: inline;
+	      	}
+	    }
+
+	    li a {
+			@include transition (all 0.2s ease-in-out);
+			background: $pagination-background;
+			border-radius: $base-border-radius;
+			border: none;
+			color: $pagination-color;
+			padding: .5em 1em;
+
+			&:hover,
+			&:focus {
+				background: $pagination-hover-background;
+				color: $base-link-color;
+			}
+
+	      	&:active {
+	        	background: $pagination-background;
+	      	}
+	    }
+
+	    li.active a {
+			background: darken(white, 30%);
+			color: white;
+	    }
+  	}
+}

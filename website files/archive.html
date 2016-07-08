@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Neat - A Lightweight HTML5 Temlpate Built with Bourbon Neat.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- google font -->
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet'>
+		<!-- fontawesome icons -->
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<!-- main stylesheet - compiled from Sass partials -->
+		<link rel="stylesheet" href="css/main.css">
+
+	</head>
+	<body>
+
+		<!-- ///// NAVIGATION HEADER ///// -->
+
+		<header id="navigation" class="navigation headroom">
+			<div class="navigation-wrapper">
+		    	
+		    	<!-- logo - you can put yours here -->
+		    	<a href="index.html" class="logo"><img src="img/logo.png" alt="logo"></a>
+		    	
+				<!-- mobile menu toggle -->
+		    	<a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+		    
+		    	<!-- navigation menu -->
+		    	<div class="nav">
+		      		<ul id="navigation-menu">
+		      			<li class="nav-link"><a href="index.html">Back To Home</a></li>
+				        <li class="nav-link"><a href="archive.html">Blog</a></li>
+		      		</ul>
+		    	</div>
+		    
+		  	</div>
+		</header>
+
+
+
+		<!-- ///// BLOG ARCHIVE ///// -->
+
+		<div class="blog-archive">
+			<div class="container">
+				<div class="title">
+					<h2>Archive for 'News' category</h2>
+					<hr class="small">
+				</div>	
+
+				<!-- main columnn -->
+
+					<div class="main-column">
+
+						<!-- standard post format -->
+						<div class="blog-item">
+							<div class="media">
+								<a class="featured-image" href="single-standard.html">
+									<img src="http://placehold.it/800x600" alt="Featured Image">
+								</a>
+							</div>
+							
+							<div class="blog-teaser">
+								<h4 class="post-title"><a href="single-standard.html">Standard Post</a></h4>
+								<div class="meta">
+									by <span class="autor"><a href="#">admin</a></span> on <span class="date"><a href="#">18th August 2014</a></span>
+								</div>
+								<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, amet, perspiciatis.</p>
+								<a href="single-standard.html" class="read-more">Read More &raquo;</a>
+							</div>
+						</div>
+						
+						<!-- image post format -->
+						<div class="blog-item">
+							<div class="media">
+								<a class="featured-image" href="single-image.html">
+									<img src="http://placehold.it/800x600" alt="Featured Image">
+								</a>
+							</div>
+							
+							<div class="blog-teaser">
+								<h4 class="post-title"><a href="single-image.html">Image Post</a></h4>
+								<div class="meta">
+									by <span class="autor"><a href="#">admin</a></span> on <span class="date"><a href="#">18th August 2014</a></span>
+								</div>
+								<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, amet, perspiciatis.</p>
+								<a href="single-image.html" class="read-more">Read More &raquo;</a>
+							</div>
+						</div>
+						
+						<!-- gallery post format -->
+						<div class="blog-item">
+							<div class="media">
+
+								<div id="gallery-slider" class="flexslider">
+
+									<ul class="slides">
+										<!-- slider items -->
+									  	<li><img src="http://placehold.it/800x600" alt="Slider Image 1"></li>
+									  	<li><img src="http://placehold.it/800x600" alt="Slider Image 2"></li>
+									  	<li><img src="http://placehold.it/800x600" alt="Slider Image 2"></li>	
+									</ul> 
+								  
+								</div>
+							</div>
+							
+							<div class="blog-teaser">
+								<h4 class="post-title"><a href="single-gallery.html">Gallery Post</a></h4>
+								<div class="meta">
+									by <span class="autor"><a href="#">admin</a></span> on <span class="date"><a href="#">18th August 2014</a></span>
+								</div>
+								<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, amet, perspiciatis.</p>
+								<a href="single-gallery.html" class="read-more">Read More &raquo;</a>
+							</div>
+						</div>
+						
+						<!-- video post format -->
+						<div class="blog-item">
+							<div class="media">
+							
+								<div class="fitvids">
+									<!-- responsive video iframe -->
+							      	<iframe width="560" height="315" src="http://www.youtube.com/embed/P8wyUq5Z3Kw" allowfullscreen></iframe>
+								</div>
+							</div>
+								
+							<div class="blog-teaser">
+								<h4 class="post-title"><a href="single-video.html">Video Post</a></h4>
+								<div class="meta">
+									by <span class="autor"><a href="#">admin</a></span> on <span class="date"><a href="#">18th August 2014</a></span>
+								</div>
+								<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, amet, perspiciatis.</p>
+								<a href="single-video.html" class="read-more">Read More &raquo;</a>
+							</div>
+						</div>
+						
+						<!-- quote post format -->
+						<div class="blog-item">
+							<div class="media">
+
+								<div class="quote-format">
+									<a href="single-quote.html">
+										<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nam et, possimus nihil officia.</blockquote>	
+									</a>
+								</div>
+							</div>
+
+							<div class="blog-teaser">
+								<h4 class="post-title"><a href="single-quote.html">Quote Post</a></h4>
+								<div class="meta">
+									by <span class="autor"><a href="#">admin</a></span> on <span class="date"><a href="#">18th August 2014</a></span>
+								</div>
+								<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, amet, perspiciatis.</p>
+								<a href="single-quote.html" class="read-more">Read More &raquo;</a>
+							</div>
+						</div>
+						
+						<!-- audio post format -->
+						<div class="blog-item">
+							<div class="media">
+
+								<iframe height="200" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/13172711&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+							</div>
+
+							<div class="blog-teaser audio">
+								<h4 class="post-title"><a href="single-audio.html">Audio Post</a></h4>
+								<div class="meta">
+									by <span class="autor"><a href="#">admin</a></span> on <span class="date"><a href="#">18th August 2014</a></span>
+								</div>
+								<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, amet, perspiciatis.</p>
+								<a href="single-audio.html" class="read-more">Read More &raquo;</a>
+							</div>
+						</div>
+
+						<!-- pagination -->
+						<div class="pagination">
+						  <ul>
+						    <li class="page-prev"><a href="javascript:void(0)">Prev</a></li>
+						    <li>
+						      <ul>
+						        <li class="active"><a href="javascript:void(0)">1</a></li>
+						        <li><a href="javascript:void(0)">2</a></li>
+						        <li><a href="javascript:void(0)">3</a></li>
+						      </ul>
+						    </li>
+						    <li class="page-next"><a href="javascript:void(0)">Next</a></li>
+						  </ul>
+						</div>
+							 
+					</div>
+
+						<!-- sidebar -->
+						<aside class="sidebar">
+
+							<!-- categories widget -->
+							<div class="widget-wrapper">
+								<div class="widget-title">
+									<h4>Categories</h4>
+								</div>
+
+								<ul class="blog-categories">
+									<li><a href="#">News</a></li>
+									<li><a href="#">Special Anouncements</a></li>
+									<li><a href="#">Competitions</a></li>
+									<li><a href="#">User Stories</a></li>
+								</ul>
+							</div>
+
+							<!-- search widget -->
+							<div class="widget-wrapper">
+								<div class="widget-title">
+									<h4>Search</h4>
+								</div>
+
+								<form>
+									<input class="search-widget" type="text" name="search" id="search" placeholder="type and hit enter...">	
+								</form>
+							</div>
+
+							<!-- tags widget -->
+							<div class="widget-wrapper">
+								<div class="widget-title">
+									<h4>Tags</h4>
+								</div>
+
+								<div class="blog-tags">
+									<span><a href="#">mountains</a></span>
+									<span><a href="#">New Zealand</a></span>
+									<span><a href="#">Switzerland</a></span>
+									<span><a href="#">Summer</a></span>
+									<span><a href="#">Winter</a></span>
+									<span><a href="#">sports</a></span>
+									<span><a href="#">another one</a></span>
+									<span><a href="#">tags are cool!</a></span>
+									<span><a href="#">tutorial</a></span>
+									<span><a href="#">showcase</a></span>
+								</div>
+							</div>
+
+						</aside>
+					</div>
+				</div>
+
+
+		<!-- ///// FOOTER ///// -->
+
+		<footer class="footer">
+			<div class="container">
+
+				<p class="copyright">Copyright &copy; 2014 <a href="index.html">Neat</a> - All Rights Reserved.</p>
+
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+
+			</div>
+		</footer>
+			
+
+		
+		<!-- ///// JAVASCRIPT INCLUDES ///// -->
+
+		<!-- jquery version 1.11.1 -->
+		<script src="js/jquery-1.11.1.min.js"></script>
+
+		<!-- javascript plugins -->
+		<script src="js/jquery.stellar.min.js"></script>
+   		<script src="js/headroom.min.js"></script>
+   		<script src="js/jquery.headroom.js"></script>
+   		<script src="js/owl.carousel.js"></script>
+   		<script src="js/jquery.fitvids.js"></script>
+   		<script src="js/jquery.flexslider.js"></script>
+
+		<!-- inits and custom js code -->
+		<script src="js/scripts.js"></script>
+
+	</body>
+</html>

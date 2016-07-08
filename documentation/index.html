@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <title>Neat | Template Documentation.</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+
+        
+        <style type="text/css">
+
+          a, a:hover { color: #1abc9c; }
+
+          hr { height: 18px; border-top: none; border-bottom: 4px solid #1abc9c; width: 50px; text-align: left; display: inline-block; margin-bottom: 0; }
+
+          #masthead {
+          	background-color: #1abc9c;
+            color: white;
+            padding: 32px 0 48px;
+          }
+
+          #masthead h1 {
+          	font-size: 26px;
+          	line-height: 1;
+            	padding-top:20px;
+          }
+
+          #masthead .well {
+          	margin-top:8%;
+          }
+
+          #main-section {
+            padding: 32px 0 480px;
+          }
+
+          h2 {
+            padding: 20px 0 12px;
+          }
+
+          @media screen and (min-width: 768px) {
+          	#masthead h1 {
+          		font-size: 50px;
+          	}
+          }
+
+          .navbar-bright {
+          	background-color:#111155;
+              color:#fff;
+          }
+
+          .affix-top,.affix{
+          	position: static;
+          }
+
+          @media (min-width: 979px) {
+            #sidebar.affix-top {
+              position: static;
+            	margin-top:30px;
+            	width:228px;
+            }
+            
+            #sidebar.affix {
+              position: fixed;
+              top:70px;
+              width:228px;
+            }
+          }
+
+          #sidebar li.active {
+            	border:0 #eee solid;
+            	border-right-width:4px;
+          }
+
+          img { margin: 24px 0 48px; }
+
+        </style>
+    </head>
+    
+    <!-- HTML code from Bootply.com editor -->
+    
+    <body  >
+
+      <div id="masthead">  
+        <div class="container">
+      
+          <h1>Neat - Documentation</h1>
+          <p class="lead">Thank you so much for purchasing the 'Neat' template! I hope you enjoy working with it and make it your own! To make sure everything goes smoothly, please refer to this documentation for instalation and setup.</p>
+      
+            
+        </div><!-- /cont -->
+      </div>
+
+      <div id="main-section">
+
+        <!-- Begin Body -->
+        <div class="container">
+        	<div class="row">
+    			 <div class="col-md-3" id="leftCol">
+                
+            	<ul class="nav nav-stacked" id="sidebar">
+                <li><a href="#sec1">Package Content</a></li>
+                <li><a href="#sec2">Installing 'Neat'</a></li>
+                <li><a href="#sec3">Sass & CSS Files</a></li>
+                <li><a href="#sec4">Full-Screen Intro Section</a></li>
+                <li><a href="#sec7">AJAX Contact Form & Newsletter Signup</a></li>
+                <li><a href="#sec8">Javascript Files</a></li>
+                <li><a href="#sec10">Questions?</a></li>
+            	</ul>
+                
+        		</div>  
+        		
+            <div class="col-md-9">
+                	<h2 id="sec1">Package Content</h2>
+                  
+                  <p>When you unzip the download files, you will see two main folders:</p>
+
+                  <ul>
+                    <li>documentation</li>
+                    <li>website files</li>
+                  </ul>
+
+                  <p>Obviously, you have now found your way to the documentation. The website files to install on your server are placed inside the <strong>website files</strong> folder.</p>
+
+                  <hr>
+                	
+                
+                
+                	<h2 id="sec2">Installing the 'Neat' Template</h2>
+                	
+                  <p>To install the 'Neat' template, place all the files contained in the <strong>website files</strong> on your web server.</p> 
+
+                  <p>'Neat' is a one-page website, with external page templates for the blog archive and 6 blog post formats.</p>
+
+                  <hr>
+
+                
+                	<h2 id="sec3">Sass & CSS files</h2>
+                	<p class="well lead">
+                  For ease of customization and flexibility, 'Neat' styling was developped with Sass, which are included in the download files. If you don't know Sass, don't worry - you can leave these files alone and work with CSS. They are here if you want to take advantage of them!</p>
+
+                  <p>'Neat' is built on the Bourbon Neat framework. You can read more about it on their <a href="http://neat.bourbon.io/" target="_blank">official website</a>.</p>
+
+                  <p>The main Sass file that compiles all of the partial files is called main.scss and is located in the /sass/ folder. This Sass file ultimately compiles into the main.css file that is called in the index.html page.</p>
+
+                  <p>3 extra versions of the main Sass (main-blue.scss, main-red.scss, main-dark.scss) file have been compiled for you. If you want to use one of them instead, all you need to do is call the corresponding css file in index.html.</p>
+
+                  <p>It is very easy to create your own color style - simply edit the main.scss file and change the <strong>$highlight</strong> color to your desired HEX value.</p>
+
+                  <p>Your CSS tweaks shoud be added at the end of the <strong>main.scss (or main.css)</strong> file, to ensure they override the other styles by being declared after them.</p>
+
+                  <hr>
+
+                  <h2 id="sec4">Full-Screen Background Intro</h2>
+
+                  <p>'Neat' starts with a full-screen hero section, where the background is composed of a background image and a background hue color overlay.
+
+                  <p>The color overlay helps you achieve a high degree of subtility with the background image, allowing to soften heavy colors and fine-tune text readability. To modify it, you can edit the <strong>.color-overlay</strong> class in the _globals.scss file, or in the main.css file in the 'Template Global Styles' section. You can change the color via <strong>background-color</strong> and the transparency via <strong>opacity</strong> - 0 is completely transparent, 1 is opaque.</p>
+
+                  <p>If you use Sass, you can change the background images in the <strong>main.sass</strong> file via the parallax variablaes.</p>
+
+                  <p>Via CSS, the background images can be set in the <code>url()</code> of the background declaration in the <strong>sass/partials/_intro.scss</strong> file, or in the main.css file under the <strong>section.intro .image-bg</strong> class.</p>
+
+                  <pre>
+section.intro .image-bg {
+  background: url('../img/name-of-your-image.jpg') 0 0 no-repeat;
+}
+                  </pre>
+
+                  <p>The same procedure is followed for the other parallax sections - the background image is set in the respective .scss file as shown above.</p>
+
+                  <p>Finally, the parallax speed can be chaged in the index.html file, in the <strong>data-stellar-background-ratio</strong> attribute of the <strong>.image-bg</strong> class.</p>
+
+                  <p>Make sure that the image you are calling is placed in the correct folder in your server, and since it's a full-screen background, the resolution should be at least 1600px wide by 1200px high or more.</p>
+
+                  <hr>
+
+                  <h2 id="sec7">AJAX Contact Form & Newsletter</h2>
+
+                  <p class="well lead">To have the contact form working, you'll need to host your website on an APACHE server that can handle PHP files correctly. It will NOT work locally or on a server that doesn't support PHP.</p>
+
+                  <p>The main thing you need to do to get the form to work is to enter your desired e-mail address in the <strong>php/config.php</strong>. This is where the form submissions will be e-mailed. The config.php file contains one line only, don't worry. Replace "your-email-address@here.com" with the appropriate address, that's all you need to do!</p>
+
+                  <p>If you want to customise the error / success / notification messages, you can do so in <strong>/js/script.js</strong> (for the success message) and in <strong>/php/contact.php and /php/newsletter.php</strong> (for the error messages & e-mail confirmation).</p>
+
+                  <p>The newsletter doesn't automatically sign your users up to a mailing list - it just e-mails you their e-mail address. If you want, you can integrate the form with MailChimp for a more performing setup. Read <a href="http://kb.mailchimp.com/article/how-can-i-add-my-signup-form-on-my-website" target="_blank">this tutorial</a> to proceed.</p>
+
+                  <p class="well"><strong>Remember:</strong> this form will not work if server doesn't handle PHP files.</p>
+
+                  <hr>
+
+                  <h2 id="sec8">Javascript Files</h2>                  
+
+                  <p>The javascript files are located in the <strong>/js</strong> folder and are called at the bottom of the HTML temlpates.</p>
+                
+                  <hr>
+                
+                	<h2 id="sec10">Any Questions?</h2>
+                  <p>Need help with anything? Be sure to create an account at the theme's <a href="http://support.simonswiss.com" target="_blank">support forum</a> and post your question there. You will need you item purchase code (available from the downloads section of your ThemeForest account) to access the support forum.</p>
+
+                  <br>
+
+                  <p class="well lead">Once again, a <strong>massive THANK YOU for your purchase</strong>. Have fun customising your 'Neat' template and go create something awesome with it!</p>
+        		</div> 
+    	</div>
+  </div>
+
+</div>
+
+
+
+        
+        <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+        <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        
+        <!-- JavaScript jQuery code from Bootply.com editor -->
+        
+        <script type='text/javascript'>
+        
+          $(document).ready(function() {
+                
+            $('#sidebar').affix({
+              offset: {
+                top: 250
+              }
+            });
+
+            var $body   = $(document.body);
+            var navHeight = $('.navbar').outerHeight(true) + 10;
+
+            $body.scrollspy({
+          	 target: '#leftCol',
+          	 offset: navHeight
+            });
+
+            /* smooth scrolling sections */
+            $('a[href*=#]:not([href=#])').click(function() {
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                  $('html,body').animate({
+                    scrollTop: target.offset().top
+                  }, 600);
+                  return false;
+                }
+              }
+            });
+        
+          });
+        
+        </script>
+        
+    </body>
+</html>

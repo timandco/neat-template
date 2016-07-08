@@ -1,0 +1,94 @@
+/* ===================== 
+NEAT - TABLE OF CONTENTS 
+========================
+
+1. CSS RESET - MEYERWEB
+2. BOURBON BITTERS STYLES
+3. OWL CAROUSEL STYLES
+4. TEMPLATE GLOBAL STYLES
+5. HEADER
+6. INTRO SECTION
+7. FEATURES SECTION
+8. NEWSLETTER SECTION
+9. SHOWCASE SECTION
+10. QUOTE / TESTIMONIALS
+11. CONTACT SECTION
+12. FOOTER
+13. USER CUSTOMISATION
+
+===================== */
+
+
+/* ====================
+1. CSS RESET - MEYERWEB 
+==================== */
+@import 'partials/reset';
+
+// bourbon neat framework
+@import '../bourbon-neat/bourbon';
+@import '../bourbon-neat/neat';
+
+/* ====================
+2. BOURBON BITTERS STYLES
+==================== */
+@import '../bourbon-neat/base/base';
+
+$highlight:	#2ecc71;
+
+$parallax-intro-url:		url('http://placehold.it/1200x700&text=use+your+image+here') 0 0 no-repeat;
+$parallax-newsletter-url:	url('http://placehold.it/1200x700&text=use+your+image+here') 0 0 no-repeat;
+$parallax-quote-url:		url('http://placehold.it/1200x700&text=use+your+image+here') 0 0 no-repeat;
+
+/* ====================
+3. OWL CAROUSEL + FLEXSLIDER STYLES 
+==================== */
+@import 'partials/owl-flexslider';
+@import 'partials/owl-theme';
+
+/* ====================
+4. TEMPLATE GLOBAL STYLES 
+==================== */
+@import 'partials/globals';
+/* ====================
+ 5. HEADER 
+==================== */
+@import 'partials/header';
+/* ====================
+6. INTRO SECTION
+==================== */
+@import 'partials/intro';
+/* ====================
+7. FEATURES SECTION
+==================== */
+@import 'partials/features';
+/* ====================
+8. NEWSLETTER SECTION
+==================== */
+@import 'partials/newsletter';
+/* ====================
+9. SHOWCASE SECTION
+==================== */
+@import 'partials/showcase';
+/* ====================
+10. QUOTE / TESTIMONIALS
+==================== */
+@import 'partials/quote';
+/* ====================
+11. BLOG SECTION
+==================== */
+@import 'partials/blog';
+/* ====================
+12. CONTACT SECTION
+==================== */
+@import 'partials/contact';
+/* ====================
+13. FOOTER
+==================== */
+@import 'partials/footer';
+
+
+/* ====================
+14. USER CUSTOMISATION 
+==================== */
+
+// Below here is a good place to write your custom CSS

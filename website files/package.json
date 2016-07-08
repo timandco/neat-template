@@ -1,0 +1,17 @@
+{
+  "name": "neat-html",
+  "version": "1.0.0",
+  "description": "A clean one-page HTML template built with bourbon / neat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bourbon",
+    "neat",
+    "html",
+    "smooth-scrolling"
+  ],
+  "author": "simonswiss",
+  "license": "ISC"
+}
